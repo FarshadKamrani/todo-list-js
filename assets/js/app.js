@@ -40,16 +40,16 @@ function createTodoElement(add, id = '') {
 
     const parentDiv = document.createElement("div");
     parentDiv.setAttribute('id', id);
-    parentDiv.classList.add("row", "g-3");
+    parentDiv.classList.add("row", "g-3", "my-2");
 
     const divChild1 = document.createElement("div");
-    divChild1.classList.add("col-12", "col-md-8");
+    divChild1.classList.add("col-12", "col-md-10");
     const todoInfo = document.createElement("div");
-    todoInfo.classList.add("alert", "alert-secondary");
+    todoInfo.classList.add("alert", "alert-secondary", "mb-0");
     todoInfo.innerHTML = add;
 
     const divChild2 = document.createElement("div");
-    divChild2.classList.add("col-12", "col-md-4");
+    divChild2.classList.add("col-12", "col-md-2");
     const btnParent = document.createElement("div");
     btnParent.classList.add("d-flex", "justify-content-center", "align-items-center", "gap-2", "h-100");
 
