@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/Plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/Plugin/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/Plugin/aos/css/unpkg.com_aos@2.3.1_dist_aos.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="d-flex justify-content-around align-items-center mt-5">
+            <h1>ToDo List</h1>
+            <i id="modeChangeIcon" class="fas fa-moon fs-2" onclick="modeChange()"></i>
+        </div>
+
+        <section class="my-3 text-center">
+            <form action="" method="post" onsubmit="addToDo()">
+                <div class="mb-3">
+                    <input type="text" id="todoInput" class="form-control w-50 d-inline" placeholder="Your ToDo's">
+                </div>
+            </form>
+        </section>
+
+        <section class="my-3" id="mainSection">
+        </section>
+
+    </main>
+
+    <!-- script -->
+    <script src="./assets/Plugin/jquery/jquery_3.7.0_jquery.min.js"></script>
+    <script src="./assets/Plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/Plugin/fontawesome/js/all.min.js"></script>
+    <script src="./assets/Plugin/aos/js/unpkg.com_aos@2.3.1_dist_aos.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
