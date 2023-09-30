@@ -12,25 +12,58 @@
 </head>
 
 <body>
-
     <main class="container">
+        <div class="row g-3">
+            <div class="col-2">
+                <aside class="d-flex flex-column flex-wrap bg-body-tertiary sticky-top">
+                    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                        <li>
+                            <a href="#" class="nav-link py-3 border-bottom rounded-0 active"
+                                onclick="filterTodo('all')">
+                                <i class="fas  fa-clipboard-list fa-lg me-2"></i>
+                                <span class="d-none d-lg-inline">All Tasks</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link py-3 border-bottom rounded-0" onclick="filterTodo('ondoing')">
+                                <i class="fas fa-spin fa-spinner fa-lg me-2"></i>
+                                <span class="d-none d-lg-inline">On Doing</span>
 
-        <div class="d-flex justify-content-around align-items-center mt-5">
-            <h1>ToDo List</h1>
-            <i id="modeChangeIcon" class="fas fa-moon fs-2" onclick="modeChange()"></i>
-        </div>
 
-        <section class="my-3 text-center">
-            <form action="" method="post" onsubmit="addToDo()">
-                <div class="mb-3">
-                    <input type="text" id="todoInput" class="form-control w-75 d-inline" placeholder="Your ToDo's">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link py-3 border-bottom rounded-0" onclick="filterTodo('done')">
+                                <i class="fas  fa-clipboard-check fa-lg me-2"></i>
+                                <span class="d-none d-lg-inline">Finished</span>
+
+
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-10">
+                <div class="d-flex justify-content-around align-items-center my-5">
+                    <h1>ToDo List</h1>
+                    <i id="modeChangeIcon" class="fas fa-moon fs-2" onclick="modeChange()"></i>
                 </div>
-            </form>
-        </section>
-
-        <section class="my-3" id="mainSection">
-        </section>
-
+                <section class="my-5">
+                    <form action="" method="post" onsubmit="addToDo()">
+                        <div class="row g-2">
+                            <div class="col-10">
+                                <input type="text" id="todoInput" class="form-control" placeholder="Your ToDo's">
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-primary" type="submit">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <section class="tasks-body my-5" id="mainSection">
+                </section>
+            </div>
+        </div>
     </main>
 
     <!-- script -->
