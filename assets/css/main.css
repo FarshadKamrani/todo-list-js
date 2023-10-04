@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Digital";
-    src: url(../../Public/fonts/Digital/DS-DIGI.woff);
+    src: url('../../Public/fonts/Digital/DS-DIGI.woff');
 }
 
 @font-face {
     font-family: "Poppins";
-    src: url(../../Public/fonts/Poppins/Poppins-Medium.ttf);
+    src: url('../../Public/fonts/Poppins/Poppins-Medium.ttf');
 }
 
 * {
