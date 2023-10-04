@@ -1,38 +1,36 @@
 @font-face {
     font-family: "Digital";
-    src: url('../../Public/fonts/Digital/DS-DIGI.woff');
-}
-
-@font-face {
+    src: url(../../Public/fonts/Digital/DS-DIGI.woff);
+  }
+  @font-face {
     font-family: "Poppins";
-    src: url('../../Public/fonts/Poppins/Poppins-Medium.ttf');
-}
-
-* {
+    src: url(../../Public/fonts/Poppins/Poppins-Medium.ttf);
+  }
+  * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html,
-body {
+            box-sizing: border-box;
+  }
+  
+  html,
+  body {
     height: 100%;
     font-family: "Poppins";
-}
-
-.title {
+  }
+  
+  .title {
     margin: 20px 0;
     text-align: center;
     font-size: 50px;
-}
-
-.show-date {
+  }
+  
+  .show-date {
     font-family: "Digital";
     font-size: 60px;
     text-align: center;
-}
-
-.cursor-pointer {
+  }
+  
+  .cursor-pointer {
     cursor: pointer;
-}
+  }
